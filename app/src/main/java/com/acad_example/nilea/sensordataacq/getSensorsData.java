@@ -191,15 +191,15 @@ public class getSensorsData extends AppCompatActivity implements SensorEventList
         @Override
         protected void onPostExecute(Void aVoid) {
             switch (sensorType){
-                case 1:
-                    xAccDataDisp.setText("X axis Gyroscope: " + xAxis);
-                    yAccDataDisp.setText("Y axis Gyroscope: " + yAxis);
-                    zAccDataDisp.setText("Z axis Gyroscope: " + zAxis);
+              case 1:
+                    xAccDataDisp.setText("X axis Accelerometer: " + xAxis);
+                    yAccDataDisp.setText("Y axis Accelerometer: " + yAxis);
+                    zAccDataDisp.setText("Z axis Accelerometer: " + zAxis);
                     break;
                 case 2:
-                    xGyroDataDisp.setText("X axis Accelerometer: " + xAxis);
-                    yGyroDataDisp.setText("Y axis Accelerometer: " + yAxis);
-                    zGyroDataDisp.setText("Z axis Accelerometer: " + zAxis);
+                    xGyroDataDisp.setText("X axis Gyroscope: " + xAxis);
+                    yGyroDataDisp.setText("Y axis Gyroscope: " + yAxis);
+                    zGyroDataDisp.setText("Z axis Gyroscope: " + zAxis);
                     break;
                 case 3:
                     xMgnDataDisp.setText("X axis Magnetometer: " + xAxis);
